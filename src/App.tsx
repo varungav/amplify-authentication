@@ -4,9 +4,8 @@ import './App.css';
 function App() {
   const [fileChanged, setFileChanged] = useState(false);
 
-  const handleFileChange = (e) => {
+  const handleFileChange = () => {
     setFileChanged(true);
-    console.log('Selected file:', e.target.files[0]);
   };
 
   return (
